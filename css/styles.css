@@ -104,9 +104,33 @@ nav h1 a {
   background-color: #ccc;
 }
 /* ====================== Media Queries ====================== */
-@media (max-width: 1200px)
+@media screen and (max-width: 1200px)
 
-@media (max-width: 600px)
+@media screen and (max-width: 600px) {
+#breadcrumb {
+	width: 100%;
+	padding: 9px 4px 15px;
+	}
+}
+
+.inside #map-container {
+	height: 400px;
+	position: relative;
+	top: 120px;
+	width: 100%
+}
+
+#reviews-list li {
+	padding: 0;
+}
+
+.inside #footer {
+	padding: 24px 0 24px;
+	position: relative;
+	top: 120px;
+	width: 100%;
+
+}
 
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
@@ -194,10 +218,10 @@ nav h1 a {
 
 /* ====================== Restaurant Details ====================== */
 .inside header {
-  position: fixed;
-  top: 0;
+  /* position: fixed; */
+  /* top: 0; */
   width: 100%;
-  z-index: 1000;
+  /* z-index: 1000; */
 }
 .inside #map-container {
   background: blue none repeat scroll 0 0;
