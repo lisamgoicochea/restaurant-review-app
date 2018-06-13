@@ -103,6 +103,11 @@ nav h1 a {
   width: 100%;
   background-color: #ccc;
 }
+/* ====================== Media Queries ====================== */
+@media (max-width: 1200px)
+
+@media (max-width: 600px)
+
 /* ====================== Restaurant Filtering ====================== */
 .filter-options {
   width: 100%;
@@ -132,6 +137,9 @@ nav h1 a {
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
   list-style: outside none none;
   margin: 0;
   padding: 30px 15px 60px;
@@ -140,6 +148,8 @@ nav h1 a {
 #restaurants-list li {
   background-color: #fff;
   border: 2px solid #ccc;
+	display: flex;
+	flex-direction: column;
   font-family: Arial,sans-serif;
   margin: 15px;
   min-height: 380px;
@@ -269,6 +279,7 @@ nav h1 a {
 }
 #reviews-list li p {
   margin: 0 0 10px;
+	font-size: 30px;
 }
 #restaurant-hours td {
   color: #666;
