@@ -16,7 +16,8 @@
 
   <main id="maincontent">
     <section id="map-container">
-      <div id="map"></div>
+      <div id="map" role="application" aria-hidden="true" aria-describedby="map-help"></div>
+      <div hidden id="map-help">
     </section>
     <section>
       <div class="filter-options">
@@ -31,6 +32,16 @@
       <ul id="restaurants-list"></ul>
     </section>
   </main>
+
+<!-- Service Worker Registration -->
+if ('serviceWorker' in navigator) {
+  window.addEventListener('load', function () {
+    navigator.serviceWorker.register('sw.js').then(function (registration) {
+      console.log('Error: Service Worker Registration Failed');
+    }
+  }
+}
+  <script>
 
   <script type="application/javascript" charset="utf-8" src="js/dbhelper.js"></script>
   <script type="application/javascript" charset="utf-8" src="js/main.js"></script>
